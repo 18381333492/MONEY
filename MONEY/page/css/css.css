@@ -292,13 +292,13 @@ body{
 	z-index: -1;
 }
 .page3 .list_news{
-	width:1200px;
+	width:1230px;
 	margin: 130px auto;
 	overflow: hidden;
 }
-.page3 .list_news{
+/*.page3 .list_news{
 	width: 1230px;
-}
+}*/
 .page3 .list_news li{
 	width: 380px;
 	height: 380px;

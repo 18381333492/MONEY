@@ -10,10 +10,15 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.js"></script>
         <link href="../nav-150618231617/css/style.css" rel="stylesheet" />
+        <link href="css/animate.min.css" rel="stylesheet" />
+        <link href="css/animate.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
         <style>
-           .menu li a span{
-               position:absolute;
-               left:0px;
+            .swiper-pagination-bullet{
+                width:15px;
+                height:15px;
+                margin-right:5px;
             }
         </style>
 	</head>
@@ -22,38 +27,40 @@
 			<a href="#" class="logo">
 				<img src="images/logo.png" alt="易买得官网">
 			</a>
-			<ul class="home_nav menu" id="menu2">
-				<li>
-					<a href="http://www.baidu.com">首页</a>
-				</li>
-				<li>
-					<a href="#">运营模式</a>
-				</li>
-				<li>
-					<a href="#">公司新闻</a>
-				</li>
-				<li>
-					<a href="#">项目优势</a>
-				</li>
-				<li>
-					<a href="#">发展规划</a>
-				</li>
-				<li>
-					<a href="#">热销车型</a>
-				</li>
-				<li>
-					<a href="#">关于我们</a>
-				</li>
-			</ul>
+            <div id="menu2" class="menu" style="float:right; margin:initial">
+                <ul class="home_nav">
+                    <li data-menuanchor="page0">
+                        <a href="#page0">首页</a>
+                    </li>
+                    <li data-menuanchor="page1"> 
+                        <a href="#page1">运营模式</a>
+                    </li>
+                    <li data-menuanchor="page2">
+                        <a href="#page2">项目优势</a>
+                    </li>
+                    <li data-menuanchor="page3">
+                        <a href="#page3">公司新闻</a>
+                    </li> 
+                    <li data-menuanchor="page4">
+                        <a href="#page4">发展规划</a>
+                    </li>
+                    <li data-menuanchor="page5">
+                        <a href="#page5">热销车型</a>
+                    </li>
+                    <li data-menuanchor="page6">
+                        <a href="#page6">关于我们</a>
+                    </li>
+                </ul>
+            </div>
 		</div>
 		<div id="fullpage">
-			<div class="section">
+			<div class="section pd">
 				<div class="page1">
 					<h1>运营模式</h1>
 					<b></b>
 					<ul>
 						<li>
-							<dl>
+							<dl >
 								<dt>投资A</dt>
 								<dd>
 									<p>设立于繁华的杭州湾经济圈—绍兴市袍江新区中国汽车城，公司以汽车销售与后市场服务业务为依托，是一家集“实业投资，信息科技应用与配载息科技应—绍兴市袍江新区中国汽车城，公司以汽车销售与后市场服务业务为依托，是一家集“实业投资，信息科技应用与配载息科技应用与配载息科技应用与配
@@ -86,7 +93,7 @@
 					<div class="ico_rtxt"></div>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section p2">
 				<div class="page2">
 					<h1>项目优势</h1>
 					<b></b>
@@ -131,65 +138,229 @@
 					<div class="box2"></div>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section p3">
 				<div class="page3">
 					<h1>公司新闻</h1>
 					<b></b>
-					<div class="list_news">
-						<ul class="clear">
-							<li>
-								<a href="#">
-									<div class="news_cover">
-										<img src="images/newsimg.png">
-									</div>
-									<div class="news_info">
-										<div class="news_title">
-											<p>二手车市场陷阱多，谨防黑心车商</p>
-											<small>2017.12.20</small>
-										</div>
-										<p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
-										<a href="#" class="v_btn">
-											<i></i>查看详情
-										</a>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="news_cover">
-										<img src="images/newsimg.png">
-									</div>
-									<div class="news_info">
-										<div class="news_title">
-											<p>二手车市场陷阱多，谨防黑心车商</p>
-											<small>2017.12.20</small>
-										</div>
-										<p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
-										<a href="#" class="v_btn">
-											<i></i>查看详情
-										</a>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="news_cover">
-										<img src="images/newsimg.png">
-									</div>
-									<div class="news_info">
-										<div class="news_title">
-											<p>二手车市场陷阱多，谨防黑心车商</p>
-											<small>2017.12.20</small>
-										</div>
-										<p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
-										<a href="#" class="v_btn">
-											<i></i>查看详情
-										</a>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>					
+                    <div class="list_news">
+                        <div class="swiper-container1">
+                            <div class="swiper-wrapper">
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="news_cover">
+                                                <img src="images/newsimg.png">
+                                            </div>
+                                            <div class="news_info">
+                                                <div class="news_title">
+                                                    <p>二手车市场陷阱多，谨防黑心车商</p>
+                                                    <small>2017.12.20</small>
+                                                </div>
+                                                <p class="news_txt">开创性打造汽车消费金融和云端4S店相结合线上锁定客户，线下服务客户的汽车后市场综合服务平台。</p>
+                                                <a href="#" class="v_btn">
+                                                    <i></i>查看详情
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="pagination1" class="swiper-pagination" style="width:100%;margin-top:-20px;width:1230px"></div>
+                     </div>		
 					<div class="ico_r1"></div>
 					<div class="ico_r2"></div>
 					<div class="ico_r3"></div>
@@ -223,137 +394,331 @@
 					</ul>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section p5">
 				<div class="page5">
 					<h1>热销车型</h1>
 					<b></b>
-					<div class="list_car">
-						<ul class="clear">
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="car_cover">
-										<img src="images/car1.jpg" alt="起亚K3">
-									</div>
-									<p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>	
-									<div class="car_info clear">
-										<p class="price">指导价<strong>6.65</strong>万</p>
-										<p class="for-month">月供1888</p>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>					
-					<div class="ico_r1"></div>
-					<div class="ico_r2"></div>
-					<div class="ico_r3"></div>
-					<div class="ico_r4"></div>
-					<div class="btns clear">
-						<div class="updown">
-							<a href="#" title="上翻" class="up"></a>
-							<a href="#" title="下翻" class="down"></a>
-						</div>
-						<a class="more_btn" href="#">查看更多</a>
-					</div>
-				</div>
-			</div>
+                    <div class="list_car">
+                        <div class="swiper-container2" style="width:1220px">
+                            <div class="swiper-wrapper">
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="clear swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="car_cover">
+                                                <img src="images/car1.jpg" alt="起亚K3">
+                                            </div>
+                                            <p class="car_name">起亚K3  2016款  1.6L 自动天窗版</p>
+                                            <div class="car_info clear">
+                                                <p class="price">指导价<strong>6.65</strong>万</p>
+                                                <p class="for-month">月供1888</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div id="pagination2" class="swiper-pagination" style="width:100%;margin-top:-40px;width:1220px"></div>-->
+                    </div>
+                            <div class="ico_r1"></div>
+                            <div class="ico_r2"></div>
+                            <div class="ico_r3"></div>
+                            <div class="ico_r4"></div>
+                            <div class="btns clear">
+                                <div class="updown">
+                                    <a href="#" title="上翻" class="up"></a>
+                                    <a href="#" title="下翻" class="down"></a>
+                                </div>
+                                <a class="more_btn" href="#">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
 		</div>
-		<script>
-			$(document).ready(function(){
-				$('#fullpage').fullpage();
-			})
-		</script>
 	</body>
 </html>
 <script type="text/javascript">
-    $(document).ready(function () {
-        debugger
+    $(document).ready(function () { 
         $("#menu2 li a").wrapInner('<span class="out"></span>');
         $("#menu2 li a").each(function () {
-            debugger
             $('<span class="over">' + $(this).text() + '</span>').appendTo(this);
         });
         $("#menu2 li a").hover(function () {
@@ -362,6 +727,53 @@
         }, function () {
             $(".out", this).stop().animate({ 'top': '0px' }, 300); // move up - show
             $(".over", this).stop().animate({ 'top': '-48px' }, 300); // move up - hide
+        });
+
+        $('#fullpage').fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            afterLoad: function (anchorLink, index) {      
+                $('.out').removeClass('click_style');         
+                $('li[data-menuanchor=' + anchorLink + ']').find('.out').addClass("click_style");
+
+                $('h1').attr("class", "");
+                setTimeout(function () {
+                    $('.' + anchorLink).find('h1').addClass("animated bounce");
+                }, 500);
+            }
+        });
+    });
+
+    $(function () {
+
+        var mySwiper = new Swiper('.swiper-container1', {
+            autoplay: false,//可选选项，自动滑动
+            pagination: {
+                el: '#pagination1',
+            },
+        });
+
+        $('.page3 .up').on("click", function () { mySwiper.slidePrev(); });
+        $('.page3 .down').on("click", function () { mySwiper.slideNext(); });
+
+        var mySwiper_Second = new Swiper('.swiper-container2', {
+            autoplay: false,//可选选项，自动滑动
+        });
+
+        $('.page5 .up').on("click", function () { mySwiper_Second.slidePrev(); });
+        $('.page5 .down').on("click", function () { mySwiper_Second.slideNext(); });
+
+
+         //banner style change
+        $('#menu2').on("click", 'a', function () {
+            $('.out').removeClass('click_style');
+            $(this).find('.out').addClass("click_style");
+        
+            $('h1').attr("class", "");
+            var pageAttr=$(this).attr("href");
+            var calss = pageAttr.substr(1, pageAttr.length - 1);
+            setTimeout(function () {
+                $('.' + calss).find('h1').addClass("animated bounce");
+            }, 500);
         });
     });
 </script>
