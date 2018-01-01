@@ -118,6 +118,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="nav-150618231617\css\style.css" />
+    <Content Include="nav-150618231617\images\s_03.jpg" />
+    <Content Include="nav-150618231617\images\w_03.jpg" />
+    <Content Include="nav-150618231617\index.html" />
+    <Content Include="nav-150618231617\js\jquery.min.js" />
     <Content Include="page\css\css.css" />
     <Content Include="page\css\public.css" />
     <Content Include="page\images\bg.jpg" />
@@ -159,6 +164,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="nav-150618231617\images\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
